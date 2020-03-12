@@ -3,8 +3,8 @@
 ## Updates ##
 
 ### 2018-10-31 ###
-  * Introduced a new JSON format for holding all information baout the transcription (speakers, words, timings)
-  * Subtitles are now split to shorter segments
+  * Introduced a new JSON format for holding all information about the transcription (speakers, words, timings)
+  * Subtitles are now split into shorter segments
   * TRS files now contain turns without utterance breaks
 
 ### 2018-09-12 ###
@@ -20,8 +20,8 @@
 
 ### 2018-08-08 ###
   * Some refactorings, and new models, and RNNLM rescoring.
-    Also, now uses a decoding with special unknkwon word handling,
-    which makes it possible to produce words not in the LM is the final output. Details
+    Also, now uses a decoding with special unknown word handling,
+    which makes it possible to produce words not in the LM in the final output. Details
     will be added later.
   
 ### 2017-05-29 ###
@@ -53,7 +53,7 @@
   * Decoding using online nnet2 models now uses non-online decoder because it
     allows multithreaded execution. This means that the whole transcription process from
     start to finish works in 1.3x realtime when using one thread, and in
-    0.8x realtime when using `nthreads=4` on a 8 year old server.
+    0.8x realtime when using `nthreads=4` on an 8-year-old server.
     
   * Segments recognized as music and jingle are now reflected as filler
     segments in the final .trs files (probably not important for most users).
